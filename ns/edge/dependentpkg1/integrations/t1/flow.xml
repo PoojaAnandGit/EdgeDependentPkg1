@@ -8,4 +8,8 @@
 <INVOKE NAME="Date" SERVICE="pub.date:getCurrentDate">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<INVOKE NAME="Flow" SERVICE="pub.flow:getRetryCount">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>
