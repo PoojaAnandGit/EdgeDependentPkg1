@@ -12,6 +12,10 @@ services:
     version: "1.0"
   - name: customPackage
     version: "1.0"
+- serviceName: pub.flow:getRetryCount
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.451
 packages:
 - name: EdgeDependentPkg1
   gitServerName: testDepServer1
