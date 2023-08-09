@@ -1,10 +1,27 @@
 version: "1.0"
 info:
   model: int-scaffold
+services:
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.451
+- serviceName: edge.dependentpkg1.integrations:t1
+  packages:
+  - name: EdgeDependentPkg1
+    version: "1.0"
+  - name: customPackage
+    version: "1.0"
 packages:
 - name: EdgeDependentPkg1
   gitServerName: testDepServer1
   gitUrl: https://github.com/PoojaAnandGit/EdgeDependentPkg1
   gitUsername: PoojaAnandGit
   gitToken: edge.scaffolding.EdgeDependentPkg1.testDepServer1.gitToken
+  gitBranch: main
+- name: customPackage
+  gitServerName: testServer1
+  gitUrl: https://github.com/PoojaAnandGit
+  gitUsername: PoojaAnandGit
+  gitToken: edge.scaffolding.customPackage.testServer1.gitToken
   gitBranch: main

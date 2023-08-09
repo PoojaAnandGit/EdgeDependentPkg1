@@ -44,12 +44,11 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">localdev</value>
-    <value name="createdDate">1691571202073</value>
-    <value name="lastModifiedDate">1691571202073</value>
+    <value name="lastModifiedBy">localdev</value>
+    <value name="lastModifiedDate">1691577953112</value>
     <record name="edgeServer" javaclass="com.wm.util.Values">
       <value name="id">default</value>
-      <null name="group"/>
+      <value name="group">default</value>
       <value name="name">Default (Cloud)</value>
     </record>
     <value name="displayName">t1</value>
@@ -67,6 +66,8 @@
           <value name="serviceName">pub.date:getCurrentDate</value>
           <value name="transformerSupport">true</value>
         </record>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <number name="nodeIndex" type="Long">0</number>
       </record>
     </record>
   </record>
