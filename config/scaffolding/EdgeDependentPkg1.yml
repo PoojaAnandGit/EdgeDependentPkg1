@@ -1,0 +1,10 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: EdgeDependentPkg1
+  gitServerName: testDepServer1
+  gitUrl: https://github.com/PoojaAnandGit/EdgeDependentPkg1
+  gitUsername: PoojaAnandGit
+  gitToken: edge.scaffolding.EdgeDependentPkg1.testDepServer1.gitToken
+  gitBranch: main
