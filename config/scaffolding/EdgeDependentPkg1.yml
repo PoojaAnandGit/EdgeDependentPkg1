@@ -20,6 +20,12 @@ services:
   packages:
   - name: WmPublic
     version: 11.0.0.0.451
+- serviceName: edge.dependentpkg1.integrations:g1
+  packages:
+  - name: EdgeDependentPkg1
+    version: "1.0"
+  - name: customPackage
+    version: "1.0"
 packages:
 - name: EdgeDependentPkg1
   gitServerName: testDepServer1
